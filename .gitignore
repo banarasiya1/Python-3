@@ -1,0 +1,3 @@
+adjacent element product in a list - inputArray
+def calulateLargestAdjacentProduct(inputArray)
+ return max([inputArray[i]*inputArray[i-1] for i in range (len(inputArray)-1)])
