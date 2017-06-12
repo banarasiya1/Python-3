@@ -1,3 +1,20 @@
-adjacent element product in a list - inputArray
+#adjacent element product in a list - inputArray
 def calulateLargestAdjacentProduct(inputArray)
  return max([inputArray[i]*inputArray[i-1] for i in range (len(inputArray)-1)])
+
+#Given an array of strings, return another array containing all of its longest strings.
+__________________inputArray = ["aba", "aa", "ad", "vcd", "aba"]
+__________________output should be allLongestStrings(inputArray) = ["aba", "vcd", "aba"].
+def allLongestStrings(inputArray): 
+ ml = max(len(s) for s in stringlist)
+ result = list(s for s in stringlist if len(s) == ml)
+ return result
+
+#3 A ticket number is considered lucky if the sum of the first half of the digits is equal to the sum of the second half.
+_________________IP - 3214
+_________________OP - True(3+2 = 1+4)
+def isLucky(n):
+    l = [int(i) for i in str(n)]
+    s = len(l)//2
+    return (sum(l[:s])==sum(l[s:]))
+
